@@ -1,10 +1,12 @@
 import os
 import sys
 
-print('Number of arguments:')
-print(len(sys.argv))
-print('Argument List:')
-print(str(sys.argv))
+commitCommand = '\ngit commit -m "Update files."'
+if len(sys.argv) == 3:
+    if sys.argv[1] == '-m':
+        commitCommand = '\ngit commit -m "' + sys.argv[2] + '"'
+
+print(commitCommand)
 
 print('add-commit-push')
 print('\ngit status')
@@ -12,7 +14,7 @@ os.system('git status')
 
 print('\ngit add -A')
 os.system('git add -A')
-print('\ngit commit -m "Update files."')
-os.system('git commit -m "Update files."')
+print(commitCommand)
+os.system(commitCommand)
 print('\ngit push')
 os.system('git push')
