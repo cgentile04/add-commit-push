@@ -11,12 +11,12 @@ print('\ngit status')
 os.system('git status')
 
 force = False
-for x in sys.argv:
-    print(x)
-    if x == '-f':
+for x in range(len(sys.argv)):
+    if sys.argv[x] == '-f':
         force = True
+print(force)
 
-if force != False:
+if force == False:
     print("Continue with add,commit,push? (y):")
     userInput = input()
     if userInput != 'y':
