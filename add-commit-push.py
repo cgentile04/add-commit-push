@@ -10,11 +10,14 @@ print('add-commit-push')
 print('\ngit status')
 os.system('git status')
 
-print("Continue with add,commit,push? (y):")
-userInput = input()
-if userInput != 'y':
-    print('Canceling program')
-    quit()
+force = False
+
+if force != False:
+    print("Continue with add,commit,push? (y):")
+    userInput = input()
+    if userInput != 'y':
+        print('Canceling program')
+        quit()
 
 print('\ngit add -A')
 os.system('git add -A')
