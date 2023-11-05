@@ -25,8 +25,7 @@ if force == False:
 def forceCom2():
     if force == True:
         print('-f')
-        print('\n')
-        print('All changes to your application will now be saved/pushed to the associated Github repository without further questioning.')
+        print('\nAll changes to your application will now be saved/pushed to the associated Github repository without further questioning.')
 forceCom2()
 
 print('\ngit add -A')
