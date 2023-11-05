@@ -15,6 +15,13 @@ for x in range(len(sys.argv)):
     if sys.argv[x] == '-f':
         force = True
 
+def forceCom2():
+    if force == True:
+        print('-f')
+        print('\n')
+        print('All changes to your application will now be saved/pushed to the associated Github repository without further questioning.')
+forceCom2()
+
 if force == False:
     print("Continue with add,commit,push? (y):")
     userInput = input()
