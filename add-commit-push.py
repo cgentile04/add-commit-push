@@ -24,7 +24,7 @@ if force == False:
 
 def forceCom2():
     if force == True:
-        print('"Force" Command detected: -f')
+        print('\n"Force" Command detected: -f')
         print('\nAll changes to your application will now be saved/pushed to the associated Github repository without further questioning.')
 forceCom2()
 
